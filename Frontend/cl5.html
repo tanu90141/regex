@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-image:url(https://img.freepik.com/premium-photo/wallpaper-with-dark-dramatic-gradient-colors-ai-generation_201606-3458.jpg ) ;
+        }
         .box {
             height: 350px;
             width: 350px;
             display: inline-block;
             border: 2px solid black;
-
-
+            background-color: aliceblue;
+            
 
         }
+
 
         .imgd {
             height: 60%;
@@ -28,23 +32,37 @@
 
         .desc {
             text-align: center;
-
-
-
-
+          
         }
 
-        .g {
-            margin-left: 80%;
-
+        .over{
+            display:flex ;
+            
         }
  nav{
+    height:100px ;
     font-size: x-large;
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
  }
         
     .im{
         width:50%;
+        border:4px solid black ;
     }
+    .con{
+       padding:200px ;
+       background-color: aliceblue;
+       border:4px solid black ;
+    }
+   .foot{
+
+    background-color: antiquewhite;
+    height:100px ;
+    text-align: center;
+    border:4px solid black ;
+   }
 
        
     </style>
@@ -52,8 +70,11 @@
 
 <body>
     <nav>
+        
         <a href="#">Home</a>
-        <div class="g"><a href="#">login</a>
+        <h1 class="head" ><b><i>This is my site</i></b></h1>
+        <div class="g">
+            <a href="#">login</a>
             <a href="#">contact</a>
             <a href="#">about us</a>
         </div>
@@ -109,6 +130,7 @@
     </div>
 
 <div class="over">
+
 <div class="im">
 
 
@@ -119,9 +141,9 @@
 <div class="con">
 <h2>details to be filled</h2>
 <form >
-name:<input type="text"> <br>
-contact:<input type="tel"> <br>
-address:<input type="text"> <br>
+name:<input type="text"> <br> <br>
+contact:<input type="tel"> <br><br>
+address:<input type="text"> <br><br>
 
 
 </form>
@@ -129,7 +151,12 @@ address:<input type="text"> <br>
 </div>
 </div>
 
-
+<footer>
+    <div class="foot">
+        <h3>help</h3>
+        <h3>contact us</h3>
+    </div>
+</footer>
 
 
 </body>
