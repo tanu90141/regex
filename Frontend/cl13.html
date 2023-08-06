@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+    .container {
+
+      height: 180vh;
+      width: 100%;
+      /* border: 2px solid black; */
+      display: flex;
+     background-color:#e8e6e2 ;
+
+    }
+
+    .logo {
+      height: 96%;
+      width: 30%;
+      /* border: 2px solid black; */
+      margin:20px ;
+      display: flex;
+      flex-direction: column;
+     background-color:white;
+     box-shadow:0px 0px 10px black ;
+    }
+
+    .content {
+
+      height: 98%;
+      width: 70%;
+      /* border: 2px solid blue; */
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+    }
+
+    .img {
+      height: 35%;
+      width: 99%;
+      /* border: 2px solid yellow; */
+    }
+
+    .form {
+      height: 64%;
+      width: 95%;
+      /* border: 2px solid chocolate; */
+      padding-left: 20px;
+      font-size: larger;
+      color: grey;
+      padding-top: 20px;
+
+
+    }
+
+
+    .img1 {
+      height: 55%;
+      width: 100%;
+      /* border: 2px solid violet; */
+
+    }
+
+    .icon {
+      height: 44%;
+      width: 97%;
+      /* border: 2px solid green; */
+      color: gray;
+      padding-left: 15px;
+      
+
+    }
+
+    .con1 {
+      height: 48%;
+      width: 100%;
+      /* border: 2px solid red; */
+   background-color:white;
+   box-shadow:0px 0px 10px black ;
+   display:flex;
+   flex-direction: column;
+    }
+
+    .con2 {
+      height: 48%;
+      width: 100%;
+      /* border: 2px solid orange; */
+
+  background-color:white;
+  box-shadow:0px 0px 10px black ;
+    }
+
+    .skills {
+      height: 50%;
+      width: 99%;
+      /* border: 2px solid black; */
+    }
+
+    .language {
+
+      height: 49%;
+      width: 99%;
+      /* border: 2px solid black; */
+
+    }
+
+    progress {
+      -webkit-appearance: none;
+      border: 1px solid black;
+      border-radius: 8%;
+
+    }
+
+    progress::-webkit-progress-bar {
+      background-color: #666;
+    }
+
+    #myturn span {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background-color: #2b6bda;
+
+    }
+
+    #myturn {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+
+    }
+
+    progress {
+      /* background-color: #429488; */
+      width: 100%;
+    }
+
+    .work {
+      height: 4%;
+      width: 95%;
+      /* border: 2px solid black; */
+     font-size: xx-large;
+    color:gray ;
+    padding:25px;
+    }
+    .front{
+  height:27%;
+  width:97%;
+  /* border:2px solid black; */
+ font-size: large;
+ color:light black;
+ padding-top:10px ;
+ padding-left:10px ;
+ 
+
+
+    }
+    button{
+      background-color: #2b6bda;
+      color: #fff;
+      border-radius:4px ;
+
+    }
+    .foot{
+  height:30%;
+  width:100%;
+  /* border:2px solid black; */
+ text-align: center;
+background-color: #2555a7;
+color:white ;
+    } 
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+      <div class="img">
+        <div class="img1">
+          <img src="images/women.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="icon">
+          <br>
+          <i class="fa-solid fa-briefcase" style="color: #2b6bda;"></i><span> &nbsp; Designer</span><br> <br><br>
+          <i class="fa-solid fa-house-chimney" style="color: #3b7ef1;"></i><span> &nbsp; London,UK</span><br><br><br>
+          <i class="fa-solid fa-envelope" style="color: #4482ee;"></i><span>&nbsp; ex@mail.com</span><br><br><br>
+          <i class="fa-solid fa-phone" style="color: #4986ee;"></i><span> &nbsp; 9419556677</span><br>
+          <hr>
+        </div>
+      </div>
+
+      <div class="form">
+        <div class="skills"> <i class="fa-solid fa-star-of-life" style="color: #4a7ed9;"></i><b>&nbsp;&nbsp;skills</b>
+          <p>Abobe Photoshop</p>
+          <div id="myturn">
+            <span data-value="90" style="width: 90%;">90%</span>
+            <progress value="90" max="100"></progress>
+          </div>
+          <p>Photography</p>
+          <div id="myturn">
+            <span data-value="90" style="width: 90%;">90%</span>
+            <progress value="90" max="100"></progress>
+          </div>
+          <p>Illustrator</p>
+          <div id="myturn">
+            <span data-value="90" style="width: 90%;">90%</span>
+            <progress value="90" max="100"></progress>
+          </div>
+          <p>Media</p>
+          <div id="myturn">
+            <span data-value="90" style="width: 90%;">90%</span>
+            <progress value="90" max="100"></progress>
+          </div>
+        </div>
+        <div class="language">
+          <i class="fa-solid fa-earth-americas" style="color: #276fec;"></i><b>&nbsp;&nbsp;Languages</b>
+          <p>English</p>
+          <div id="myturn">
+            <span data-value="90" style="width: 90%;">90%</span>
+            <progress value="90" max="100"></progress>
+          </div>
+          <p>Spanish</p>
+          <div id="myturn">
+            <span data-value="90" style="width: 90%;">90%</span>
+            <progress value="90" max="100"></progress>
+          </div>
+          <p>German</p>
+          <div id="myturn">
+            <span data-value="90" style="width: 90%;">90%</span>
+            <progress value="90" max="100"></progress>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="con1">
+        <div class="work">
+          <i class="fa-solid fa-suitcase" style="color: #2f61b6;"></i><b>&nbsp;&nbsp;&nbsp;Work Experience</b>
+
+        </div>
+        <div class="front">
+          <b>Front End Developer / W3schools.com</b><br>
+          <br>
+          <i class="fa-regular fa-calendar-days" style="color: #346bcb;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2b6bda;">Jan 2015 -</span>
+          <button>current</button><br>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam debitis necessitatibus hic ea obcaecati, nemo tempore soluta, officiis similique, corrupti quibusdam? Debitis dolorum veniam adipisci temporibus quis explicabo inventore amet.</p>
+
+
+
+        </div>
+        <div class="front">
+          <b>Web Developper / something.com</b><br>
+          <br>
+          <i class="fa-regular fa-calendar-days" style="color: #346bcb;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2b6bda;">Mar 2012 - Dec 2014</span>
+          <br>
+          <br>
+         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam debitis necessitatibus hic ea obcaecati, nemo tempore soluta, officiis similique, corrupti quibusdam? Debitis dolorum veniam adipisci temporibus quis explicabo inventore amet.</p>
+
+
+        </div>
+        <div class="front">
+
+          <b>Graphics Designer / Designsomething.com</b><br>
+          <br> 
+          <i class="fa-regular fa-calendar-days" style="color: #346bcb;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2b6bda;">Jan 2010 - Mar 2012</span>
+          
+          <br><br>
+<p>          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam debitis necessitatibus hic ea obcaecati, nemo tempore soluta, officiis similique, corrupti quibusdam? Debitis dolorum veniam adipisci temporibus quis explicabo inventore amet.
+</p>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+      <div class="con2">
+        <div class="work">
+          <i class="fa-solid fa-suitcase" style="color: #2f61b6;"></i><b>&nbsp;&nbsp;&nbsp;Education</b>
+
+        </div>
+        <div class="front">
+          <b>W3schools.com</b><br>
+          <br>
+          <i class="fa-regular fa-calendar-days" style="color: #346bcb;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2b6bda;">Forever</span>
+          <br>
+          <br>
+         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit Veniam debitis.        </p></div>
+
+
+          <div class="front">
+            <b>London Business School</b><br>
+            <br>
+            <i class="fa-regular fa-calendar-days" style="color: #346bcb;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2b6bda;">2013 -2015</span>
+            <br>
+            <br>
+           <p> Lorem ipsum     </p>    </div>
+  
+  
+            <div class="front">
+              <b>School of Coding </b><br>
+              <br>
+              <i class="fa-regular fa-calendar-days" style="color: #346bcb;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2b6bda;">2010 -2013</span>
+              <br>
+              <br>
+<p>              Bacheloe degree</p>       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+    <!-- <div class="foot"></div> -->
+  </div>
+  <div class="foot">
+    <span>Find me on social media.</span><br><br>
+
+    <i class="fa-brands fa-facebook" style="color: #f9f9f9;"></i>
+    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-snapchat" style="color: rgb(255, 255, 255);"></i>
+    <i class="fa-brands fa-pinterest-p" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+    <br>
+    <br>
+    <span>Powered by <a style="color: #fff;" href="">W3schools</a></span>
+  </div>
+</body>
+
+</html>
