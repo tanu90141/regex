@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        height:100vh;
+       
+       border:2px solid black;
+        overflow-x: hidden;
+        overflow-y:auto ;
+      display:flex;
+      flex-wrap: wrap;
+       } 
+       .oval{
+        width: 100px;
+    height: 180px; /* Adjust height as needed */
+    background-color: white;
+    border-radius: 50% / 100%; 
+        /* border:2px solid black; */
+        margin:3px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+     <script>const boxes = document.querySelectorAll(".oval");
+
+        boxes.forEach(oval=> {
+            oval.addEventListener("mouseenter",  ()=>{
+                const randomColor = getRandomColor();
+            oval.style.backgroundColor = randomColor;
+            })
+        });
+        
+        function getRandomColor() {
+          const color= `rgb(${Math.floor(Math.random()*254)},${Math.floor(Math.random()*254)},${Math.floor(Math.random()*254)})`;
+          console.log(color)
+            return color;
+        }
+        </script>
+
+      
+</body>
+</html>
