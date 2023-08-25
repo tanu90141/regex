@@ -1,17 +1,25 @@
-import React from 'react'
+  import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-const ImageCard = () => {
+
+
+const ImageCard = ({key,src,title,desc}) => {
+  const [Count ,setCount]= useState(0);
+const HandleClick = () => {
+  console.log("button clicked",Count);
+setCount(Count+1)
+};
   return (
     <div>
-          <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={}/>
+      <Card style={{ width: '15rem' }}>
+      <Card.Img variant="top" src={src}/>
       <Card.Body>
-        <Card.Title>{}</Card.Title>
+        <Card.Title>{title}</Card.Title>
         <Card.Text>
-          {}
+          {desc}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button onClick = {HandleClick} variant="primary">Go somewhere</Button>
+        {Count}
       </Card.Body>
     </Card>
 
