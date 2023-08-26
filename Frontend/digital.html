@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .wrapper {
+            height: 100vh;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 50%;
+            width: 50%;
+            border: 2px solid black;
+        }
+
+        .dates {
+            height: 30%;
+            border: 2px solid black;
+            font-size: 32px;
+        }
+
+        .three {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* font-weight:20px ; */
+            font-size: 40px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 2px 2px 10px black;
+            border-radius: 10%;
+            border: 2px solid black;
+        }
+
+        .times {
+            height: 58%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="dates">
+                <div id="date"></div>
+            </div>
+            <div class="times">
+                <div class="three" id="hr"></div>
+                <div class="three" id="min"></div>
+                <div class="three" id="sec"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+
+        setInterval(() => {
+            let d = new Date()
+            let dt= d.getDate();
+            let month=d.getMonth()+1;
+            let day=d.getFullYear()
+            let hour = d.getHours();
+            let min = d.getMinutes();
+            let sec = d.getSeconds();
+
+            document.getElementById("date").innerHTML=`${dt}-${month}-${day}`;
+            document.getElementById("hr").innerHTML = hour;
+            document.getElementById("min").innerHTML = min;
+            document.getElementById("sec").innerHTML = sec;
+        }, 1000);
+    </script>
+</body>
+
+</html>

@@ -6,9 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text"id="d">
-    <button id="t">submit</button>
+    <input type="text"id="one">
+    <input type="text"id="two">
+    <!-- <button id="click">on click</button> -->
+  <select name="choose" id="s">
+    <option    value="none">none</option>
+    <option    value="add">add</option>
+    <option    value="sub">sub</option>
+    <option   value="divide">divide</option>
+    <option   value="multiply">multiply</option>
+  </select> 
+
+   <!-- <input type="text"id="d"> -->
+    <!-- <button id="t">submit</button> -->
    <script>
+//     document.getElementById("click").onclick=function(){
+//     let a=document.getElementById("one").value;
+//    document.getElementById("one").value=count(a);
+// }
+// function count(a){
+//    var count=0
+// while(a/10!=0)
+// {
+// count++;
+// a=parseInt(a/10);
+// }
+
+// return count;
+// }
 // var i=0;
 // while(i<=100)
 // {
@@ -70,12 +95,38 @@
 
 
 // }
-document.getElementById("t").onclick= function(){
-   let a= document.getElementById("d").value;
-   console.log(a);
-    
+// document.getElementById("t").onclick= function(){
+//    let a= document.getElementById("d").value;
+//    console.log(a);
+// }
+
+
+
+document.getElementById("s").onchange=function(){
+let op=document.getElementById("s").value
+let a=parseInt(document.getElementById("one").value);
+let b=parseInt(document.getElementById("two").value);
+document.getElementById("one").value=fun(a,b,op);
+
+}
+function fun(a,b,op){
+
+if(op=="add"){
+    return (a+b);
+
+}
+else if(op=="sub"){
+    return  (a-b);
+}
+else if(op=="divide")
+{
+    return (a/b);
+}
+else{
+    return (a*b);
 }
 
+}
    </script> 
 </body>
 </html>

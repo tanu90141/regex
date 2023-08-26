@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container {
+        height: 100vh;
+        border: 2px solid black;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: flex;
+        flex-wrap: wrap;
+       } 
+       .oval {
+        width: 100px;
+        height: 180px;
+        background-color: white;
+        border-radius: 50% / 100%;
+        border: 2px solid black;
+        margin: 3px;
+        transition: background-color 0.3s; /* Add smooth transition effect */
+       }
+       .oval:hover {
+        background-color: lightblue; /* Change the color on hover */
+       }
+    </style>
+</head>
+<body>
+    <div class="container" id="oval-container"></div>
+
+    <script>
+      // Function to generate a random color in hexadecimal format
+      function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      // Number of oval shapes
+      const numOfOvals = 100;
+
+      // Get the oval container
+      const ovalContainer = document.getElementById('oval-container');
+
+      // Generate and append oval shapes with random colors
+      for (let i = 0; i < numOfOvals; i++) {
+        const oval = document.createElement('div');
+        oval.className = 'oval';
+        oval.style.backgroundColor = getRandomColor();
+        ovalContainer.appendChild(oval);
+      }
+    </script>
+</body>
+</html>
